@@ -26,7 +26,7 @@ public class GameCharacter {
         boolean canFight = hasWeapon && !isInjured;
         boolean needHealing = isInjured || !hasShield;
         boolean isVulnerable = !hasShield && !hasWeapon;
-        boolean shouldUsePotion = hasPortion && isInjured;
+        boolean shouldUsePotion = hasPotion && isInjured;
         boolean isReadyForBattle = hasWeapon && hasShield && !isInjured;
         //Output
 
@@ -35,7 +35,7 @@ public class GameCharacter {
         System.out.println(" CanFight : " + canFight);
         System.out.println("NeedHealing : " + needHealing);
         System.out.println("IsVulnerable : " + isVulnerable);
-        System.out.println("ShouldUsePortion : " + shouldUsePortion);
+        System.out.println("ShouldUsePotion : " + shouldUsePotion);
         System.out.println("IsReadyForBattle : " + isReadyForBattle);
     }
 }
